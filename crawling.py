@@ -90,9 +90,6 @@ def crawl(keywords):
                     with open('MainData/' + str(imgNum) + "." + imgtype, mode='w+b') as f:
                         encoded_img.tofile(f)
 
-            succounter = succounter + 1
-            imgNum = imgNum + 1
-
             os.remove('MainData/' + keywords + "_" + str(counter) + "." + imgtype)  # 사용한 사진은 삭제
             break
 
